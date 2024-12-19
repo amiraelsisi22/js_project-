@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --main_colour: #1E202B;
+    --cl_font: #009AD8;
+    --cl-font-data: #B1B3C3;
+    --bg-body-table: #323544;
+}
+
+.bg-body-table {
+    background-color: var(--bg-body-table);
+}
+
+.main_colour {
+    background-color: var(--main_colour);
+}
+
+.clour_active {
+    color: var(--cl_font);
+}
+
+body {
+    background-color: var(--main_colour);
+}
+
+.navbar_background {
+    background-color: var(--main_colour);
+}
+
+.header_after::after {
+    content: 'tagline goes here';
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 9px;
+
+}
+
+.navbar-nav .nav-link.active {
+    border: var(--cl_font) solid 2px;
+    color: var(--cl_font);
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+
+.navbar-nav .nav-link {
+
+    color: white;
+
+    transition: all 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    border: var(--cl_font)solid 2px;
+    color: var(--cl_font);
+    border-radius: 30px;
+    padding: 5px 25px;
+
+
+}
+
+.head_image {
+    background-image: url(../Images/banner.png);
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover cover;
+    padding: 70px 0;
+}
+
+.search_feild {
+    top: 30%;
+}
+
+#serch_input {
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+}
+
+#serch_input::placeholder {
+    color: grey;
+}
+
+#serch_input:focus {
+    box-shadow: 0 0 0 0px #1E202B;
+}
+
+footer {
+    background-color: #262936;
+}
+
+#Subscribe_input {
+    background-color: var(--main_colour);
+    outline: none;
+    border: var(--main_colour);
+}
+
+#Subscribe_input::placeholder {
+    color: grey;
+}
+
+.btn_icon {
+    cursor: pointer;
+}
+
+.Forecast {
+    top: 45%;
+    min-height: 400px;
+    max-height: auto;
+    box-sizing: border-box;
+    
+}
+
+.City-Temp {
+    font-size: 100px;
+}
+
+.Weather-Type {
+    color: var(--cl_font);
+}
+
+#Current-Date {
+    background-color: #2D303D;
+}
+
+.colour_data {
+    color: var(--cl-font-data);
+}
+
+.Forcast-table {
+    display: flex;
+
+}
+
+.middle_table {
+    background-color: #262936;
+
+}
+#Subscribe_btn
+{
+    padding: 12px 40px;
+    background-color: var(--cl_font);
+    border-radius: 30px;
+    outline: none;
+    border: none;   
+}
+#Subscribe_input::placeholder
+{
+    color: grey;
+}
+#Subscribe_input:focus
+{
+    box-shadow: 0 0 0 0px #1E202B;
+}
+
+

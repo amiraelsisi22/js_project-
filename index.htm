@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg p-5">
+        <div class="container align-items-center">
+          <a class="navbar-brand header_after fs-3 text-white" href="#">
+            <img src="images/logo.png" alt="Logo" width="30" height="37" class="d-inline-block align-items-center">
+            Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto me-1 gap-4">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link border-2 links_changes" href="#">news</a>
+              <a class="nav-link border-2 links_changes" href="#">Live Cameras</a>
+              <a class="nav-link border-2 links_changes">Photos</a>
+              <a class="nav-link border-2 links_changes">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+        
+      <input type="search" placeholder="Find your location..." id="city" class="form-control bg-transparent text-white">
+      <button type="button" value="Find" id="show" class="text-white btn d-flex align-items-center ">Find
+        <span class="btn_icon"><i class="fa-solid fa-magnifying-glass text-white ms-2 mt-1"></i></span>
+      </button>
+
+
+
+
+
+<div class="card-group">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <small class="text-body-secondary " id="currentday"></small>
+            <small class="text-body-secondary " id="currentdate"></small>
+          </div>
+      <div class="card-body">
+        <p class="card-title fs-2" id="ccity">Card title</p>
+        <h1 id="temp-c">14^C</h1>
+        <img id="icon1" src="https://cdn.weatherapi.com/weather/64x64/day/122.png" alt="Weather Icon">
+      </div>
+     
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+          <small class="text-body-secondary " id="nextday"></small>
+         
+        </div>
+    <div class="card-body">
+      <img id="icon2" alt="Weather Icon">
+      <h1 id="temp-c"></h1>
+      
+    </div>
+   
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+        <small class="text-body-secondary " id="nextnextday"></small>
+     
+      </div>
+  <div class="card-body">
+    <p class="card-title" id="ccity">Card title</p>
+    <h1 id="temp-c"></h1>
+    <img id="icon1" alt="Weather Icon">
+  </div>
+ 
+</div>
+  </div>
+
+  <footer>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-6 d-flex">
+          <input type="email" placeholder="Enter Your Email to Subscribe..." id="Subscribe_input" class="form-control main_colour text-white rounded-pill shadow">
+          <button type="button" value="Subscribe" id="Subscribe_btn" class="text-white btn d-flex align-items-center">Subscribe
+          </button>
+        </div>
+        <div class="col-md-6">
+          <div class="icons">
+            <ul class="d-flex ">
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-facebook"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-twitter"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-google-plus"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p class="fs-5 text-white-50 mt-5 ms-1">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
